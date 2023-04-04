@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 초기화 태그 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 0.9em !important;
+            height: 2000px; /*강제 스크롤을 주기위해: 삭제하고 사용하세요*/
+            background: teal; /*강제 스크롤을 주기위해: 삭제하고 사용하세요*/
+        }
+        
+        ul {
+            list-style: none;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        a {
+            color: black !important;
+            text-decoration: none !important;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 0 !important;
+        }
+        
+        .wrap {
+            overflow: hidden;
+            min-width: 1200px;
+        }
+
+        /* 헤더 */
+
+        header {
+            height: 80px; 
+            position: relative;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            z-index: 999;
+            width: 100%;   /*직방은 특이하게 header의 width가 100%로 입니다.*/
+            border-bottom: 1px solid rgb(193, 193, 193);
+            background-color: white;
+        }
+
+        .nav__menu >  li {
+            position: relative;
+            top: 0;
+            display: inline-block;
+            padding: 20px;
+        }
+        
+        .w1 {
+            display: block;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        
+        .w2 {
+            display: block;
+            font-size: 13px;
+        }
+        
+        .sub-menu {
+            display: none;
+            width: 200px;
+            background: white;  
+            position: absolute;
+            top: 80px;
+            border: 1px solid rgb(202, 202, 202);
+        }
+
+        .nav__menu li:hover .sub-menu {
+            display: block;
+        }
+
+        .sub-menu > li {
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <nav class="nav">
+                <a href="./index.html" class="nav__logo">
+                    <img src="./images/logo.png" width="200">
+                </a>
+                <ul class="nav__menu">
+                    <li>
+                        <a href="#">
+                            <span class="w1">아파트</span>
+                            <span class="w2">매매/월세/신축분양</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">매매/전월세</a></li>
+                            <li><a href="#">신축분양</a></li>
+                            <li><a href="#">인구흐름</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="w1">빌라, 투룸+</span>
+                            <span class="w2">신축분양/매매/전월세</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">빌라, 투룸 찾기</a></li>
+                            <li><a href="#">찜한 매물</a></li>
+                            <li><a href="#">빌라 내놓기(전월세만)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="w1">원룸</span>
+                            <span class="w2">전월세</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">방찾기</a></li>
+                            <li><a href="#">찜한 매물</a></li>
+                            <li><a href="#">방 내놓기(전월세만)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="w1">오피스텔</span>
+                            <span class="w2">도시형생활주택/전월세</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">오피스텔 찾기</a></li>
+                            <li><a href="#">찜한 매물</a></li>
+                            <li><a href="#">오피스텔 내놓기(전월세만)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="w1">창업/사무실</span>
+                            <span class="w2">임대/매매</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">상가/점포</a></li>
+                            <li><a href="#">사무실</a></li>
+                            <li><a href="#">공유오피스</a></li>
+                            <li><a href="#">찜한 매물</a></li>
+                            <li><a href="#">상가/사무실 내놓기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quasi, optio voluptate amet reiciendis a necessitatibus molestiae quidem reprehenderit illum, ducimus dolor veniam nobis consequatur! Ad, perferendis. Illum, eveniet magni.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum odit deleniti possimus labore ullam alias quaerat officiis! Odit error ullam totam? Vero inventore, quo provident totam doloremque voluptatibus perspiciatis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum odit deleniti possimus labore ullam alias quaerat officiis! Odit error ullam totam? Vero inventore, quo provident totam doloremque voluptatibus perspiciatis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum odit deleniti possimus labore ullam alias quaerat officiis! Odit error ullam totam? Vero inventore, quo provident totam doloremque voluptatibus perspiciatis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum odit deleniti possimus labore ullam alias quaerat officiis! Odit error ullam totam? Vero inventore, quo provident totam doloremque voluptatibus perspiciatis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum odit deleniti possimus labore ullam alias quaerat officiis! Odit error ullam totam? Vero inventore, quo provident totam doloremque voluptatibus perspiciatis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum odit deleniti possimus labore ullam alias quaerat officiis! Odit error ullam totam? Vero inventore, quo provident totam doloremque voluptatibus perspiciatis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum odit deleniti possimus labore ullam alias quaerat officiis! Odit error ullam totam? Vero inventore, quo provident totam doloremque voluptatibus perspiciatis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum odit deleniti possimus labore ullam alias quaerat officiis! Odit error ullam totam? Vero inventore, quo provident totam doloremque voluptatibus perspiciatis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum odit deleniti possimus labore ullam alias quaerat officiis! Odit error ullam totam? Vero inventore, quo provident totam doloremque voluptatibus perspiciatis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate rerum odit deleniti possimus labore ullam alias quaerat officiis! Odit error ullam totam? Vero inventore, quo provident totam doloremque voluptatibus perspiciatis.
+        </main>
+    </div>
+</body>
+</html>

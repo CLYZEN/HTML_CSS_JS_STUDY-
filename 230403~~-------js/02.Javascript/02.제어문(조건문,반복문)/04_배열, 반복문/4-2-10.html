@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //무한반복
+        for (let i = 0; true; i++) {
+            console.log(`${i}번째 반복`);
+
+            const isContinue = confirm('계속 하시겠습니까');
+
+            if (!isContinue) {
+                break;
+            }
+            
+        }
+
+        console.log('종료.');
+    </script>
+</body>
+</html>

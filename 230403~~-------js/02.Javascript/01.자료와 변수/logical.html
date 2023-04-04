@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = true;
+        var b = false;
+        var c = true;
+        var d = 0; //false
+        var e = null; //false
+
+        document.write(a && b, '<br>');
+        document.write(a && c, '<br>');
+        document.write( Boolean(a && d),'<br>' );
+
+        document.write(a || (b && c), '<br>');
+        document.write(a || c || d, '<br>');
+        document.write( Boolean(d || e), '<br>' );
+        document.write(!a, '<br>');
+        document.write(!b);
+
+        var str = 'string';
+        var num = 1;
+        console.log( typeof(a) );
+        console.log( typeof(str) );
+        console.log( typeof(num) );
+    </script>
+</body>
+</html> 

@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em !important;
+    height: 2000px; /*강제 스크롤을 주기위해: 삭제하고 사용하세요*/
+    background: teal; /*강제 스크롤을 주기위해: 삭제하고 사용하세요*/
+}
+
+ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.wrap {
+    overflow: hidden;
+    min-width: 1200px;
+}
+
+/* 헤더 */
+
+header {
+    height: 80px; 
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    width: 100%;   /*직방은 특이하게 header의 width가 100%로 입니다.*/
+    border-bottom: 1px solid rgb(193, 193, 193);
+    background-color: white;
+}
+
+.nav__menu >  li {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    padding: 20px;
+}
+
+.w1 {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.w2 {
+    display: block;
+    font-size: 13px;
+}
+
+.sub-menu {
+    display: none;
+    width: 200px;
+    background: white;  
+    position: absolute;
+    top: 80px;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.nav__menu li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu > li {
+    padding: 10px;
+}

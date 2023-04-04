@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* font load */
+        @font-face {
+            font-family: 'ostrich-sans-bold';
+            src: local('Ostrich Sans'),
+                url('./fonts/ostrich-sans-bold.woff') format('woff'),
+                url('./fonts/ostrich-sans-bold.ttf') format('truetype'),
+                url('./fonts/ostrich-sans-bold.svg') format('svg');
+        }
+        .wfont {
+            /* 다국어 대응으로 sans-serif는 무조건 추가 */
+            font-family: 'ostrich-sans-bold', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>Using Default Fonts</p>
+    <p class="wfont">Using Web Fonts</p>
+</body>
+</html>

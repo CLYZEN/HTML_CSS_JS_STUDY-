@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+/* 초기화 태그 */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.wrap {
+    overflow: hidden;
+    min-width: 1200px;
+}
+
+/* header */
+header {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+}
+nav {
+    border-bottom: 1px solid rgb(255, 214, 214) !important;
+    background-color: white !important;
+    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    padding-left: 20px;
+}
+.nav__menu {
+    width: 60%;
+}
+.nav__logo {
+    width :250px;
+}
+.nav_etc {
+    width: 20%; height: 100%;
+    display: flex;
+    align-content: flex-end;
+
+}
+.nav_etc > div:first-child {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.nav_etc > div:first-child > button {
+    border-radius: 10px;
+    border: 1px solid rgb(180, 178, 178);
+    width: 120px; height: 35px;
+    font-size : 11px
+    
+}
+.nav_etc > div:first-child > button:hover {
+    background-color: gray;
+}
+.nav_right_logo {
+    background-image: url(../images/ceo_ad_img_new.png);
+    background-repeat: no-repeat;
+    background-size: 250px 70px;
+    width: 300px; height: 80px;
+}
+.nav_right_logo:hover {
+    background-color: rgb(197, 197, 197);
+}
+.nav__menu > li {
+    display: inline-block !important;
+    padding: 20px;
+    position: relative !important;
+    top: 0;
+}
+.w1 {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+}
+.w2 {
+    display: block;
+    font-size: 13px;
+}
+.sub-menu {
+    display: none;
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    border: 1px solid rgb(255, 237, 237);
+}
+.nav__menu > li:hover .sub-menu {
+    display: block;
+}
+.sub-menu > li {
+    padding: 10px;
+}
+/* main */
+main {
+    width: 100%;
+    padding-top: 86px ;
+}
+.section__find {
+    height: 460px; width: 100%;
+}
+.find_background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; height: 460px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.find_background > div:nth-child(1) {
+    margin : 0 auto;
+    color: white;
+    font-size: 30px;
+}
+.find_background > div:nth-child(2) {
+    width: 510px;
+}
+.nav-pills {
+    background-color: rgba(23, 51, 80, 0.8);
+    border-radius: 10px;
+}
+.nav-pills > li {
+    width : 20%;
+    font-size: 12px;
+    text-align: center;
+}
+.nav-pills > .nav-item:not(:first-child) > a {
+    color: white !important;
+    font-weight: bold;
+}
+.input-group {
+    margin-top: 40px;
+    width: 510px !important; height: 60px;
+}
+.input-group > button {
+    background-color: rgb(255,104,27);
+    width: 70px;
+    margin: 0;
+    padding: 0;
+
+}
+.input-group >  button > i {
+    font-size: 20px !important;
+    color: white !important;
+    margin-left: 20px;
+}
+.input-group > label > input {
+    width: 440px;
+    padding: 20px;
+    font-size: 14px;
+}
+.active {
+    background-color: white !important;
+    color: rgb(8, 0, 121) !important;
+    font-weight: bold !important;
+}
+.section__etc {
+    height: 280px;
+}
+.etc_wrap {
+    width: 100%; height: 280px;
+}
+.etc_content {
+    width: 840px; height: 280px;
+    margin: 0 auto;
+    display: flex;
+}
+.etc_div {
+    width: 33.33%; height: 100%;
+    margin: 20px 20px;
+}
+.etc_div > div:last-child {
+    height: 80%;
+}
+.etc_introduce > div:last-child > a > img{
+    width: 260px; height: 140px;
+    margin-top: 50px;
+}   
+.etc_div > div:first-child {
+    border-bottom: solid 1px gray;
+    height: 15%;
+}
+.etc_div > div > h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.etc_news > div:first-child {
+    display: flex;
+}
+.etc_news > div:first-child > button {
+    margin-left: 150px;
+    margin-bottom: 5px;
+    border : none;
+    border-radius: 5px;
+}
+.etc_news > div:first-child > button:hover {
+    background-color: rgb(185, 185, 185);
+}
+.etc_notice > div:first-child {
+    display: flex;
+}
+.etc_notice > div:first-child > button {
+    margin-left: 140px;
+    margin-bottom: 5px;
+    border : none;
+    border-radius: 5px;
+}
+.etc_notice > div:first-child > button:hover {
+    background-color: rgb(185, 185, 185);
+}
+.etc_div > div:last-child > a > div {
+    width: 100%; height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+}
+.etc_div > div:last-child > a > div:hover {
+    background-color: rgb(221, 221, 221);
+}
+.etc_div > div:last-child > a > div:first-child {
+    margin-top : 10px;
+}
+.section__app_intro {
+    margin-top:50px;
+    height: 280px;
+    background-color: rgb(243,245,245);
+}
+.app_intro_wrap {
+    margin: 0 auto;
+    width: 890px; height: 100%;
+    display: flex;
+}
+.app_intro_wrap > div:first-child {
+    width: 40%; height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.app_intro_wrap > div:first-child > div {
+    background-image: url('../images/phone.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 60%; height: 100%;
+
+}
+.app_intro_wrap > div:last-child {
+    width: 60%; height: 100%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.app_intro_wrap > div:last-child > div:first-child {
+    display: flex;
+    height: 60%; width: 100%;
+}
+.app_intro_wrap > div:last-child > div > p {
+    font-size: 17px;
+    font-weight: bold;
+    height: 100%; width: 100%;
+    padding-top: 110px;
+}
+.app_intro_wrap > div:last-child > div:last-child {
+    display: flex;
+    height: 40%; width: 100%;
+}
+.app_intro_wrap > div:last-child > div > a {
+    width: 50%; height: 100%;
+}
+.app_intro_wrap > div:last-child > div > a:first-child > div {
+    height: 100%; width: 100%;
+    background-image: url('../images/BTN_download_android_nor.png');
+    background-repeat: no-repeat;
+    background-size: 230px 50px;
+}
+.app_intro_wrap > div:last-child > div > a:last-child > div {
+    height: 100%; width: 100%;
+    background-image: url('../images/BTN_download_ios_nor.png');
+    background-repeat: no-repeat;
+    background-size: 230px 50px;
+}
+/* footer */
+footer {
+    height: 370px;
+    margin-top: 60px;
+}
+.footer_wrap {
+    width: 600px; height: 370px;
+    margin: 0 auto;
+}
+.footer_wrap > p {
+    text-align: center;
+}
+.footer_wrap > p > a {
+    font-size: 12px;
+    text-align: center;
+}
+.footer_wrap > div {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.footer_wrap > div > div {
+    padding-top: 20px;
+}
+.footer_wrap > div > div > p {
+    color: rgb(182, 182, 182) !important;
+    padding-top: 20px;
+}
+.footer_wrap > div > div > a > img {
+    width: 34px; height: 34px;
+    margin : 0 10px;
+}
+
+/* 말줄임표, width 무조건필요 */
+.test {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}

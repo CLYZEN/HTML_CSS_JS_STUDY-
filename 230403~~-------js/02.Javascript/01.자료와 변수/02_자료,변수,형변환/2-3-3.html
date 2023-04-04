@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            인치를 센치로 바꿔줌.
+            공식 cm = inch * 2.54
+        */
+
+        //값 (인치) 입력받기
+        const rawInput = prompt('inch를 입력해주세요.');
+ 
+        //입력밭은 값 문자열 -> 숫자로 형변환 (prompt는 문자열로 입력받음.)
+        const inch = Number(rawInput);
+        const cm = inch * 2.54;
+
+        document.write(inch + "inch는 " + cm + "cm입니다", "<br>");
+        document.write(`${inch} inch는 ${cm} cm 입니다.`);
+        
+    </script>
+</body>
+</html>

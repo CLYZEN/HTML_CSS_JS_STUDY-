@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+        ul li {
+            margin: 15px;
+        }
+
+        /* li며 new를 class로 가짐 */
+        /* li.new {
+            background-color: #f00;
+            color: #fff;
+        } */
+        
+        /* 위 조건의 뒤에 적용 before은 앞에 적용 */
+        li.new::after {
+            background-color: #f00;
+            color: #fff;
+            content: "new";
+            font-size: 10px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>제품 목록</h1>
+    <ul>
+      <li class="new">제품 A</li>
+      <li>제품 B</li>
+      <li>제품 C</li>
+      <li class="new">제품 D</li>
+    </ul>
+  </div>
+</body>
+</html>

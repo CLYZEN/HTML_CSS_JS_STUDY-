@@ -1,0 +1,108 @@
+@charset "utf-8";
+/*초기화 태그*/
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.wrap {
+    overflow: hidden;
+    min-width: 1200px;
+}
+
+/* 헤더 */
+header {
+    height: 75px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+.header_div {
+    width: 100%;
+    background-color: aqua;
+}
+.header_div_left {
+    float: left;
+}
+.header_div_right {
+    float: right;
+
+}
+/* 메인 */
+main {
+    margin: 0 auto;
+    width : 1200px;
+}
+.main_select_div {
+    width: 1190px; height: 50px;
+    margin : 5px 5px 5px 5px;
+    /* background-color: #00ffaa; */
+    position: absolute;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.main_select_div ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main_select_div ul li{
+}
+.select_input_section {
+    height: 200px;
+    margin-top:  50px;
+    background-color: blue;
+    display: flex;
+}
+.etc_section {
+    height: 50px;
+    margin-top:  50px;
+    background-color: blueviolet;
+}
+.advertisement_section {
+    height: 300px;
+    margin-top:  50px;
+    background-color: red;
+}
+.qr_section {
+    height: 50px;
+    margin-top:  50px;
+    background-color: #eee;
+}
+.discount_section {
+    height: 300px;
+    margin-top:  50px;
+    background-color: #000;
+    color: white;
+}
+.introduce_section {
+    height: 300px;
+    margin-top:  50px;
+    background-color: #00ffaa;
+}
+/* 푸터 */
+footer {
+    height: 75px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(193, 193, 193);
+}
+.footer_div {
+    width: 100%;
+    background-color: beige;
+}

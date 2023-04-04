@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* 1. 26 라인의 <img>태그를 선택하는 선택자를 작성하시오.*/
+        .logo img { border: 1px solid red; }
+        
+        /* 2. 28~32 라인의 <div>태그를 선택하는 선택자를 작성하시오(후손 선택자 필수)*/
+        #main_header .login_menu { border: 1px solid red; }
+        
+        /* 3. 35~44 라인의 4번째 <a>태그를 선택하는 선택자를 작성하시오(일반 구조 선택자 필수)*/
+        #global_aside a:nth-child(4) { border: 1px solid red; }
+
+        /* 4. 48~59 라인의 class가 header인 태그를 선택하는 선택자를 작성하시오(자손 선택자 필수) */
+        #detail_list ul:first-of-type > .header { border: 1px solid red; } 
+
+        /* 5. <ul>태그(61~72라인)에서 세번째 <li>을 선택하는 선택자를 작성하시오(형태 구조 선택자 필수)*/
+        #detail_list ul:nth-of-type(2) li:nth-child(3) {border: 1px solid red;}
+
+        /* 6. 73 라인의 <p>태그에 마우스를 올렸을때의 선택자를 작성하시오*/
+        #detail_list p:nth-of-type(3):hover {border: 1px solid red;}
+
+        /* 
+           답안 작성:
+           '선택자 {}' 의 형태로 한다, 임의의 class나 id 추가 금지, 주어진 조건 충족, border: 1px solid red; 로 결과테스트
+        */ 
+    </style>
+</head>
+<body>
+    <header id="main_header">
+        <h1 class="logo">
+            <a href="#"><img src="http://placehold.it/90x160" /></a>
+        </h1>
+        <div class="login_menu">
+            <span><a href="#">로그인</a></span>
+            <span><a href="#">회원가입</a></span>
+            <span><a href="#">고객센터</a></span>
+        </div>
+    </header>
+    <aside id="global_aside">
+        <a><img src="http://placehold.it/90x160" /></a>
+        <a><img src="http://placehold.it/90x160" /></a>
+        <a><img src="http://placehold.it/90x160" /></a>
+        <a><img src="http://placehold.it/90x160" /></a>
+        <a><img src="http://placehold.it/90x160" /></a>
+        <a><img src="http://placehold.it/90x160" /></a>
+        <a><img src="http://placehold.it/90x160" /></a>
+        <a><img src="http://placehold.it/90x160" /></a>
+        <a><img src="http://placehold.it/90x160" /></a>
+        <a><img src="http://placehold.it/90x160" /></a>
+    </aside>
+    <div id="detail_list">
+        <p>주제1</p>
+        <ul class="column_1">
+            <li class="header"><p>게임용 노트북</p></li>
+            <li>아이온 게임용 노트북</li>
+            <li>디아블로 게임용 노트북</li>
+            <li>블소 게임용 노트북</li>
+            <li class="header"><p>울트라북</p></li>
+            <li>헬로키티 울트라북</li>
+            <li>리락쿠마 울트라북 초특가</li>
+            <li>카피바라 울트라북</li>
+            <li>쵸파 울트라북</li>
+            <li>고양이 울트라북</li>
+        </ul>
+        <p>주제2</p>
+        <ul>
+            <li class="header"><p>게임용 노트북</p></li>
+            <li>아이온 게임용 노트북</li>
+            <li>디아블로 게임용 노트북</li>
+            <li>블소 게임용 노트북</li>
+            <li class="header"><p>울트라북</p></li>
+            <li>헬로키티 울트라북</li>
+            <li>리락쿠마 울트라북 초특가</li>
+            <li>카피바라 울트라북</li>
+            <li>쵸파 울트라북</li>
+            <li>고양이 울트라북</li>
+        </ul>
+        <p>끝</p>
+    </div>    
+    
+</body>
+</html>

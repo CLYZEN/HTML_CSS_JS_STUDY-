@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 10;
+        var b = 20;
+        var c = 10;
+        var f = "10";
+        var result; // undefined상태 : 값 정의 X
+        var result2 = null; // null 빈값
+
+        // console.log(result);
+        console.log(Boolean(""));
+        console.log(Boolean(0));
+        console.log(Boolean(result));
+        console.log(Boolean(result2));
+
+        console.log(Boolean('h1'));
+        console.log(Boolean(3));
+
+        result = a === f;
+        document.write(result , "<br>");
+
+        result = a == f;
+        document.write(result);
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #containor {
+            width: 800px;
+            margin: 20px auto;
+        }
+        .origin {
+            width: 100px; height: 100px;
+            float: left;
+            margin: 40px;
+        }
+        #rotate1:hover {
+            /* 시계방향 40도 회전 */
+            transform: rotate(40deg);
+        }
+        #rotate2:hover {
+            /* 반시계방향 40도 회전 */
+            transform: rotate(-40deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="containor">
+        <div class="origin" id="rotate1">
+            <img src="./images/tree.jpg" alt="">
+        </div>
+        <div class="origin" id="rotate2">
+            <img src="./images/tree.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

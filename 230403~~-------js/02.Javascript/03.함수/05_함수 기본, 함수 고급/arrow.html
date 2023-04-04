@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(a, b) {
+            console.log(`a 는 ${a} b는 ${b} `);
+            return a + b;
+        }
+
+        // es6 화살표 함수
+        const addArrow = (a, b) => a + b; // return값 하나일 시 중괄호, return 생략 가능
+
+
+        const sum = add(1, 2);
+        console.log(`합 : ${sum}`);
+
+        const sum1 = addArrow(5, 6);
+        console.log(`합 : ${sum1}`);
+
+
+        
+    </script>
+</body>
+</html>

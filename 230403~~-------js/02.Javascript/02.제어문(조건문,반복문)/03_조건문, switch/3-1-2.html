@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //현재 시 구하기
+        const date = new Date();
+        const hour = date.getHours(); // 0 ~ 23
+
+        if (hour < 11) {
+            document.write('아침 먹을 시간입니다');
+        } else if (hour < 15) {
+            document.write('점심 먹을 시간입니다');
+        } else if (hour < 16) {
+            document.write('늦은 점심 먹을 시간입니다');    
+        } else if (hour < 17) {
+            document.write('곧 저녁 먹어야해요');    
+        } else {
+            document.write('저녁 먹을 시간입니다');
+        }
+
+        // ------------------------------------------------------------------------
+        // if (hour < 11) {
+        //     document.write('아침 먹을 시간입니다');    
+        // } else {
+        //     if (hour < 15) {
+        //         document.write('점심 먹을 시간입니다');
+        //     } else {
+        //         document.write('저녁 먹을 시간입니다');    
+        //     }
+        // }
+        // ------------------------------------------------------------------------
+        // if (hour < 12) {
+        //     document.write(`오전 ${hour} 시`);
+        // } else {
+        //     document.write(`오후 ${hour - 12} 시`);
+        // }
+        // console.log(hour);
+    </script>
+</body>
+</html>

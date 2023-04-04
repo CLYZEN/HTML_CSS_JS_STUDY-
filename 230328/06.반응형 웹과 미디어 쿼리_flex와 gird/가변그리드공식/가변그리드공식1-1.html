@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+		/* 0px ~ 959px */
+		/* @media screen and (max-wdith:959px) {
+			#wrap {
+				width: 100%; 
+			}
+			#wrap div {
+				width: 31.25%;
+			}
+		} */
+
+		* {
+		margin: 0;
+		padding: 0;
+		}
+		#wrap {
+			width: 960px; height: 500px;
+			background-color: skyblue;
+			margin: 0 auto;
+		}
+		#wrap div {
+			width: 300px; height: 100%;
+			background-color: salmon;
+		}
+
+		/* 1024px ~ */
+		@media all and (min-width:1024px) {
+			
+		}
+		/* 768 ~ 1023px */
+		@media all and (min-width:768px) and (max-width:1023px) {
+			#wrap {
+				width: 100%;
+			}
+			#wrap div {
+				width: 31.25%;
+			}
+		}
+		/* 0 ~ 767px */
+		@media all and (max-width:767px){
+			#wrap {
+				width: 60%;
+			}
+			#wrap div {
+				width: 11.25%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div></div>
+	</div>
+</body>
+</html>

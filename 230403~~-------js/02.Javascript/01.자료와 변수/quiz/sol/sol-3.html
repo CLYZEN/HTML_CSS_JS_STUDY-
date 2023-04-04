@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+      // 숫자를 입력받습니다.
+      const rawInput = prompt('원의 반지름을 입력해주세요.')
+      const r = Number(rawInput)
+
+      // 출력합니다.
+      // ${} 내부에는 표현식을 사용할 수 잇으므로
+      // 다음과 같이 계산식을 넣을 수도 있습니다.
+      // 여러 줄을 좀 쉽게 볼 수 있게
+      // output을 만들고 연결하는 형태로 코드를 작성했습니다.
+      let output = ''
+      output += `원의 반지름: ${r}\n`
+      output += `원의 넓이: ${3.14 * r * r}\n`
+      output += `원의 둘레: ${2 * 3.14 * r}`
+      alert(output)
+    </script>
+  </head> 
+  <body>  
+  </body>
+</html>

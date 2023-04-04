@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const int1 = Number(prompt('첫번째 정수를 입력해주세요.', ''));
+        const int2 = Number(prompt('두번째 정수를 입력해주세요.', ''));
+        const int3 = Number(prompt('세번째 정수를 입력해주세요.', ''));
+
+        var avg = Number(int1 + int2 + int3) / 3;
+        var sum = Number(int1 + int2 + int3);
+        var max = int1;
+        var min = int1;
+
+        if (int1 > int2 && int1 > int3) {
+            console.log(`최댓값은 ${max}`);
+            console.log(`평균은 ${avg}`);
+            console.log(`합계 ${sum}`);
+        } else if (int2 < int1 && int2 < int3) {
+            max = int2;
+            console.log(`최댓값은 ${max}`);
+            console.log(`평균은 ${avg}`);
+            console.log(`합계 ${sum}`);
+        } else {
+            max = int3;
+            console.log(`최댓값은 ${int3}`);
+            console.log(`평균은 ${avg}`);
+            console.log(`합계 ${sum}`);
+        }
+
+        if (int1 < int2 && int1 < int3) {
+            console.log(`최소값은 ${min}`);
+        } else if (int2 < int1 && int2 < int3) {
+            min = int2;
+            console.log(`최소값은 ${min}`);
+        } else {
+            min = int3;
+            console.log(`최소값은 ${min}`);
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin: 20px auto;
+            width: 100px; height: 100px;
+            background-color: #07f;
+            border: 1px solid black;
+
+            /* 트랜지션 대상 : 너비, 높이 */
+            transition-property: width, height;
+            /* 트랜지션 시간 : 너비2초 높이1초동안 변환 */
+            transition-duration: 2s, 1s;
+        }
+
+        .box:hover {
+            width: 200px; height: 120px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

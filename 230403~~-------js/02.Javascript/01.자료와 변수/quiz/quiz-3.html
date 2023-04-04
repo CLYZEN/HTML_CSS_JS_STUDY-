@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+      // 숫자를 입력받습니다.
+      const rawInput = prompt("원의 반지름을 입력해주세요.");
+
+      //숫자 형태로 변환합니다.
+      let half = Number(rawInput);
+      let pi = 3.14
+      let round = pi * half * half;
+      let circle = 2 * pi * half; 
+
+      //원의 넓이와 둘레를 구해 출력하세요.
+      document.write("원의 넓이는" + round, "<br>");
+      document.write("원의 둘레는" + circle);
+    </script>
+  </head>
+  <body></body>
+</html>
