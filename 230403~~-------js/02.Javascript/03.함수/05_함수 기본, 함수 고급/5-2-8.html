@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let id;
+        let count = 0;
+
+        id = setInterval(function(){
+            console.log(`1초마다 실행 ${count}번째 `);
+            count++;
+
+        },1000);
+
+        //es6
+        // setTimeout( () => {
+        //}, 1000 )
+        // clearInterval(타이머 변수)
+        setTimeout(function(){
+            console.log(`종료`);
+            clearInterval(id);
+        },5000);
+        
+    </script>
+</body>
+</html>

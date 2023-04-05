@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Today = new Date(); // Date 객체 생성
+        console.log(Today);
+
+        console.log(Today.getDay());
+        let day = '';
+
+        switch (Today.getDay()) {
+            case 0: day = '일'; break;
+            case 1: day = '월'; break;
+            case 2: day = '화'; break;
+            case 3: day = '수'; break;
+            case 4: day = '목'; break;
+            case 5: day = '금'; break;
+            case 6: day = '토'; break;
+        }
+        console.log(day);
+
+        console.log(`오늘은 ${Today.getFullYear()}년 ${Today.getMonth()+1}월 ${Today.getDate()}일 ${day}요일`);
+        console.log(`${Today.getHours()}시 ${Today.getMinutes()}분 ${Today.getSeconds()}초`);
+    </script>
+</body>
+</html>

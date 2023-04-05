@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* JSON Object default */
+        /* key : value */ 
+        const data = {
+            name : "흰둥이",
+            owner : "신짱구",
+            age : 1,
+            arr : [1, 2, 3, 4], //배열
+            walk : function(str) {
+                console.log(str);
+                console.log("산책중");
+            }
+        };
+
+        console.log(data);
+        console.log(data.name);
+        console.log(data.age);
+        console.log(data.owner);
+        
+        data.owner = "박승철";
+        console.log(data);
+
+        console.log(data.arr);
+
+        let result = data.arr;
+        console.log(result[2]);
+
+        data.walk("HI"); // 함수 실행
+
+        // JSON Object -> String 
+        let data2 = JSON.stringify(data);
+        console.log(data2);
+
+        // String -> JSON Object Parse
+        console.log(JSON.parse(data2));
+
+        console.log('================================');
+        
+        // array in JSON Object
+        const data3 = [{
+            name : "흰둥이",
+            owner : "신짱구",
+            age : "1"
+        }, {
+            name : "신짱구",
+            age : 5,
+            hate : "피망"
+        }];
+        console.log(data3);
+        
+        //  let t = data3[1];
+        //  console.log(t.name);
+        console.log(data3[1].name);
+
+        data3[1].hate = "양파";
+        console.log(data3[1]);
+
+        // quiz -------------------------------------------------------
+        // 1. data2의 흰둥이의 name과 age를 콘솔창에 출력하세요
+        console.log("name : "+ data3[0].name+ " age : "+ data3[0].age);
+
+        // 2. data2의 owner을 '신짱아'로 바꿔보세요.
+        data3[0].owner = "신짱아";
+        console.log(data3[0]);
+    </script>
+</body>
+</html>

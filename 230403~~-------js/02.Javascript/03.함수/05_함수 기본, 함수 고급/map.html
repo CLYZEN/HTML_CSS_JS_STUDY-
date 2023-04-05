@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array1 = [1, 4, 9, 16];
+
+        // 배열.map(함수)
+        var arr1 = array1.map(function(item) {
+            // element : 배열의 값
+            // index : 배열의 index
+            // array : 배열 전체
+            console.log(`값 : ${item}`);
+
+            return item * 2; // return 4번 발생
+        });
+        
+        // es6
+        var arr1 = array1.map((item) =>item * 2 );
+
+        // map : return 된 데이터를 모아서 배열로 만들어 줌
+        console.log(arr1);
+    </script>
+</body>
+</html>

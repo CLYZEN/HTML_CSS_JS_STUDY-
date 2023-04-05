@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+        var val = words.filter(function(word, index, array) {
+            console.log(`값 : ${word}, 인덱스 ${index}, 전체 ${array}`);
+            console.log(`글자수 : ${word.length}`)
+
+            // 글자 수가 6 이상 return
+            return word.length > 6;
+        });
+
+        // es6
+        var val = words.filter(word => word.length > 6);
+
+        console.log(val);
+    </script>
+</body>
+</html>

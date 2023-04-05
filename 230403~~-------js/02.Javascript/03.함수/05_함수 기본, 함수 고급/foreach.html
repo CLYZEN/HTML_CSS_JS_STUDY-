@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array = ['a', 'b', 'c'];
+
+        // forEach 함수 호출
+        // 배열.forEach(함수)
+        array.forEach(function(element, index, array) {
+            // element : 배열의 값
+            // index : 배열의 index
+            // array : 배열 전체
+            console.log(`값 : ${element}, 인덱스 ${index}, 전체 ${array}`);
+        });
+
+        array.forEach((element, index, array) => {
+            console.log(`값 : ${element}, 인덱스 ${index}, 전체 ${array}`);
+
+        });
+    </script>
+</body>
+</html>

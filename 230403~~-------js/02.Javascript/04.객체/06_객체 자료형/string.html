@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 1;
+        console.log(String(num));
+
+        let str = '     hi              ';
+        console.log(str);
+        console.log(str.trim());
+
+        let str2 =  '배,사과,토마토,포도';
+        let arr = str2.split(',');
+        console.log(arr);
+
+        let str3 = '자바스크립트 시간 입니다.';
+        console.log(str3.length); // 공백 포함
+        console.log(str3[3]); // 문자열을 배열처럼 사용 / index가 3인 크 출력
+
+        console.log('indexOf 자바 : ' + str3.indexOf('자바'));
+        console.log('indexOf 시간 : ' + str3.indexOf('시간'));
+        console.log('indexOf 시간 : ' + str3.indexOf('엄'));
+
+        // 검색기능
+        let search = '이젠';
+
+        if (str3.indexOf(search) == -1) {
+            alert('해당 자료는 존재하지 않음.');
+        } else {
+            // 결과 보여주기
+        }
+    </script>
+</body>
+</html>
