@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first"></div>
+    <script>
+        const header = document.createElement('h1');
+        const header2 = document.createElement('h2');
+        const div = document.createElement('div');
+        const first = document.querySelector('#first');
+
+        console.log(header, div);
+
+        header.textContent = 'h1 생성';
+        div.textContent = 'div 생성';
+        header2.textContent = 'h2 생성';
+
+        // 생성한 tag -> body
+        // body -> childTag
+        document.body.appendChild(header);
+        document.body.appendChild(div);
+        first.appendChild(header2);
+    </script>
+</body>
+</html>

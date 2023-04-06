@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1번째 h1태그</h1>
+    <h1>2번째 h1태그</h1>
+
+    <script>
+        function h1(text) {
+            return `<h1>${text}</h1>`;
+        }
+        document.body.innerHTML += (h1('1번째 script 태그'));
+        
+        console.log(document);
+        console.log(document.body);
+        console.log(document.body.innerHTML);
+    </script>
+</body>
+</html>

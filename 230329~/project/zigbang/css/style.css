@@ -127,6 +127,9 @@ main {
     background-repeat: no-repeat;
     margin: 0 auto;
 }
+#basic-addon2:hover {
+    background-color: rgb(202, 144, 35) !important;
+}
 .find_background > div:nth-child(1) {
     margin : 0 auto;
     color: white;

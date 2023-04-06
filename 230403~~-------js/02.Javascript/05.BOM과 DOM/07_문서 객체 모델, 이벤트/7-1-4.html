@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HEADER1</h1>
+    <h1>HEADER2</h1>
+    <h1>HEADER3</h1>
+    <h1>HEADER4</h1>
+    <script>
+        //여러개의 태그는 배열 형태로 리턴함.
+        const header = document.querySelectorAll('h1');
+        console.log(header);
+
+        for(const headers of header) {
+            console.log(headers);
+            headers.style.color = 'white';
+            headers.style.padding = '10px';
+            headers.style.backgroundColor = 'black';
+        }
+    </script>
+</body>
+</html>

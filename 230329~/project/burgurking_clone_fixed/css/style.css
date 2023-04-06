@@ -49,6 +49,7 @@ header {
     align-items: center;
     border-bottom: 1px solid rgb(204,205,211);
     background-color: white;
+    z-index: 9999 !important;
 }
 header > div {
     margin: 0 auto;
