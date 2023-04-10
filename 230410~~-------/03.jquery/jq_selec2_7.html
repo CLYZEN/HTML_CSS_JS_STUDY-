@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+	<ul id="menu1">
+		<li>내용1-1</li>
+		<li>내용1-2</li>
+		<li>내용1-3</li>
+	</ul>
+	<ul id="menu2">
+		<li>내용2-1</li>
+		<li>내용2-2</li>
+		<li id="list3">내용2-3</li>
+	</ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var idxNum = $("li").index($('#list3'));
+            console.log(idxNum);
+            console.log('-----------------------------------------------')
+           /*  const lists = document.querySelectorAll('#menu2 li');
+
+            for(const list of lists) {
+                console.log(list);
+            } */
+
+            // 여러개의 태그를 한꺼번에 선택할 때 사용 (querySelectorAll과 동)
+            $.each($('#menu2 li'), function(i, e){
+                console.log(i + ":", $(this)); // tihs : 본인
+                // console.log(i+":"+e);
+            });
+      /*       var obj = [{
+                "area" : "서울"
+            }, {
+                "area" : "부산"
+            }, {
+                "area" : "전주"
+            }];
+
+            for (const o of obj) {
+                console.log(o);
+            }
+
+            obj.forEach(function(element) {
+                console.log(element);
+            });
+
+            $(obj).each(function(index, element) {
+                // console.log(index);
+                // console.log(element);
+                console.log(index + ":" + JSON.stringify(element));
+            }); */
+
+            
+        });
+    </script>
+</body>
+</html>

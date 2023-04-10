@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>탐색 선택자</h1>
+	<ul>
+		<li>내용1-1</li>
+		<li>내용1-2</li>
+		<li>내용1-3</li>
+	</ul>
+	<ul>
+		<li>내용2-1</li>
+		<li>내용2-2</li>
+		<li>내용2-3</li>
+	</ul> -->
+
+    <h1>탐색 선택자</h1>
+	<ul id="menu1">
+		<li>내용1-1</li>
+		<li>내용1-2</li>
+		<li>내용1-3</li>
+		<li>내용1-4</li>
+	</ul>
+	<ul id="menu2">
+		<li>내용2-1</li>
+		<li>내용2-2</li>
+		<li>내용2-3</li>
+	</ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            // $('li:first-of-type').css({
+            //     "color" : "red"
+            // });
+            // $('li:last-of-type').css({
+            //     "color" : "blue"
+            // });
+
+            // $('#menu1 li:nth-child(1)').css({
+            //     "color" : "red"
+            // });
+            
+            // $('#menu1 li:nth-child(2n)').css({
+            //     "color" : "blue"
+            // });
+
+            // $('#menu2 li:nth-last-child(3)').css({
+            //     "color" : "green"
+            // });
+            
+            $('#menu1 li').slice(1,3).css({
+                "color" : "red"
+            });
+        });
+    </script>
+</body>
+</html>

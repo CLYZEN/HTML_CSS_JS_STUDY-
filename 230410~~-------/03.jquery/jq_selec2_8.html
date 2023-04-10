@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        var arr1 = [{
+            "area":"서울", 
+            "name":"무대리"
+            },{
+                "area":"부산", 
+                "name":"홍과장"
+            },{
+                "area":"대전", 
+                "name":"박사장"
+            },{
+                "area":"서울", 
+                "name":"빅마마"
+            }];
+
+        var arr2 = $.map(arr1, function(a, b) {
+            console.log(a);
+            console.log(b);
+            if(a.area === "서울") {
+                return a;
+            }
+        });
+        console.log(arr2);
+        console.log("grep-----------------------------------------------");
+
+        var arr3 = $.grep(arr1, function(a, b) {
+            console.log(a);
+            console.log(b);
+            if(a.area === "서울") {
+                return true;
+            } else {
+                return false;
+            }
+        });
+        console.log(arr3)
+
+    </script>
+</body>
+</html>
