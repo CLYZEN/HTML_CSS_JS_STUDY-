@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+.wrap {
+    background-color: rgb(241, 241, 241);
+}
+
+/* 헤더 */
+
+.header__bg {
+    height: 500px;
+    background: url('../images/1024x450.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__bg > .search {
+    height: 40px;
+    /* width: 500px; */
+    margin-top: 70px;
+}
+
+.header__bg > .location-card {
+    color: white !important;
+    background-color: rgba(33,37,41,0.5)!important;
+}
+
+.header__bg > .location-card .card-subtitle {
+    color: white !important;
+}
+
+/* 푸터 */
+
+footer {
+    height: 150px;
+}
+
+footer > div:nth-child(1) {
+    background: rgb(225, 225, 232);
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+}
+
+footer > div:nth-child(2) {
+    background: white;
+    height: 100px;
+    padding-top: 30px;
+}
+
+footer > div:nth-child(2) > div {
+    font-size: 13px;
+    text-align: center;
+}
+
+footer a {
+    color: black !important;
+    text-decoration: none !important;
+}

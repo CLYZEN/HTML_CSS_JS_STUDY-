@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/brands.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/solid.css">
+
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <nav class="navbar navbar-dark bg-dark fixed-top">
+                <div class="container">
+                  <a class="navbar-brand" href="./index.html"><img src="./images/logo.svg" width="150" alt="로고"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">AccuWeather</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li>
+                          <a class="nav-link active" href="./register.html">
+                            <button type="button" class="btn btn-primary">회원가입</button>
+                          </a>
+                        </li>
+                        <li>
+                          <hr>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#">오늘</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">일별</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">시간별</a>
+                        </li>
+                      </ul>
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="검색어를 입력" aria-label="Search">
+                        <button class="btn btn-success"  style="width: 80px;" type="submit">검색</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+            <div class="header__bg container-fluid">
+                <div class="row container">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-8">
+                    <div class="input-group mb-3 search">
+                      <input type="text" class="form-control" placeholder="검색" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-2"></div>
+                </div>
+                <div class="card location-card">
+                    <div class="card-body">
+                      <h5 class="card-title region1-depth">-</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary region3-depth">-</h6>
+                      <p class="card-text">
+                        <img src="https://openweathermap.org/img/wn/01d.png" class="region-icon" alt="날씨아이콘"> 
+                        <span class="region-weather" style="font-size: 25px;">-</span>
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <section>
+                <h2 style="font-size: 18px; font-weight: bold;">지도에서 위치보기</h2>
+                <div id="map"></div>
+            </section>
+            <section>
+                <h2 style="font-size: 18px; font-weight: bold;">대한민국 기상상태</h2>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="card border-light mb-3">
+                            <div class="card-header">서울</div>
+                            <div class="card-body seoul">
+                              <h5 class="card-title icon">
+                                <img src="https://openweathermap.org/img/wn/01d.png" alt="날씨아이콘">
+                              </h5>
+                              <p class="card-text celsius">-℃</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card border-light mb-3">
+                            <div class="card-header">인천</div>
+                            <div class="card-body incheon">
+                                <h5 class="card-title icon">
+                                    <img src="https://openweathermap.org/img/wn/01d.png" alt="날씨아이콘">
+                                  </h5>
+                              <p class="card-text celsius">-℃</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card border-light mb-3">
+                            <div class="card-header">부산</div>
+                            <div class="card-body busan">
+                                <h5 class="card-title icon">
+                                    <img src="https://openweathermap.org/img/wn/01d.png" alt="날씨아이콘">
+                                  </h5>
+                              <p class="card-text celsius">-℃</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card border-light mb-3">
+                            <div class="card-header">대구</div>
+                            <div class="card-body daegu">
+                                <h5 class="card-title icon">
+                                    <img src="https://openweathermap.org/img/wn/01d.png" alt="날씨아이콘">
+                                  </h5>
+                              <p class="card-text celsius">-℃</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card border-light mb-3">
+                            <div class="card-header">대전</div>
+                            <div class="card-body daejeon">
+                                <h5 class="card-title icon">
+                                    <img src="https://openweathermap.org/img/wn/01d.png" alt="날씨아이콘">
+                                  </h5>
+                              <p class="card-text celsius">-℃</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card border-light mb-3">
+                            <div class="card-header">제주</div>
+                            <div class="card-body jeju">
+                                <h5 class="card-title icon">
+                                    <img src="https://openweathermap.org/img/wn/01d.png" alt="날씨아이콘">
+                                  </h5>
+                              <p class="card-text celsius">-℃</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="card border-light mb-3">
+                            <div class="card-header">강릉</div>
+                            <div class="card-body gangneung">
+                              <h5 class="card-title icon">
+                                <img src="https://openweathermap.org/img/wn/01d.png" alt="날씨아이콘">
+                              </h5>
+                              <p class="card-text celsius">-℃</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card border-light mb-3">
+                            <div class="card-header">부천</div>
+                            <div class="card-body bucheon">
+                                <h5 class="card-title icon">
+                                    <img src="https://openweathermap.org/img/wn/01d.png" alt="날씨아이콘">
+                                  </h5>
+                              <p class="card-text celsius">-℃</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card border-light mb-3">
+                            <div class="card-header">김해</div>
+                            <div class="card-body gimhae">
+                                <h5 class="card-title icon">
+                                    <img src="https://openweathermap.org/img/wn/01d.png" alt="날씨아이콘">
+                                  </h5>
+                              <p class="card-text celsius">-℃</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card border-light mb-3">
+                            <div class="card-header">경주</div>
+                            <div class="card-body gyeongju">
+                                <h5 class="card-title icon">
+                                    <img src="https://openweathermap.org/img/wn/01d.png" alt="날씨아이콘">
+                                  </h5>
+                              <p class="card-text celsius">-℃</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card border-light mb-3">
+                            <div class="card-header">익산</div>
+                            <div class="card-body iksan">
+                                <h5 class="card-title icon">
+                                    <img src="https://openweathermap.org/img/wn/01d.png" alt="날씨아이콘">
+                                  </h5>
+                              <p class="card-text celsius">-℃</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="card border-light mb-3">
+                            <div class="card-header">여수</div>
+                            <div class="card-body yeosu">
+                                <h5 class="card-title icon">
+                                    <img src="https://openweathermap.org/img/wn/01d.png" alt="날씨아이콘">
+                                  </h5>
+                              <p class="card-text celsius">-℃</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <div class="container">
+                    <a href="#">전 세계</a> > 
+                    <a href="#">아시아</a> > 
+                    <a href="#">대한민국</a>
+                </div>
+            </div>
+            <div>
+                <div class="container">
+                    <div>
+                        © 2021 AccuWeather, Inc. "AccuWeather" and sun design are registered trademarks of AccuWeather, Inc. All Rights Reserved.
+                    </div>
+                    <div>
+                        <a href="#">이용 약관</a> | 
+                        <a href="#">개인정보 보호정책</a> | 
+                        <a href="#">쿠키 사용 정책</a> | 
+                        <a href="#">TAG 공개</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- 카카오맵 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9858a6ff72cdfce1ea4668f8838a5415&libraries=services"></script>
+    <!-- js -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

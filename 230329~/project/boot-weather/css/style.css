@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* 메인 */
+
+main > section {
+    margin: 60px 0;
+}
+
+#map {
+    height: 500px !important;
+}
+
