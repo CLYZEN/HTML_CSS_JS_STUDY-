@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="rel_site">
+		<option value="">사이트 선택</option>
+		<option value="www.google.com">구글</option>
+		<option value="www.naver.com">네이버</option>
+		<option value="www.daum.net">다음</option>
+    </select>
+    <p class="txt"></p>
+
+    <a href="https://www.naver.com" class="link1">테스트1</a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('#rel_site').change(function() {
+                $('.txt').text($(this).val());
+            });
+
+            $('.link1').click(function(e) {
+                e.preventDefault(); // 링크 이동 막기
+                // console.log(e);
+                alert('click event');
+            });
+        });
+    </script>
+</body>
+</html>

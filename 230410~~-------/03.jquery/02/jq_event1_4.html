@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(document).ready(function() {
+                var h1 = $('.img1').height();
+                console.log('ready', h1);
+            }); // html이 로드되면 실행
+
+            $(window).on('load', function (e) {
+                var h1 = $('.img1').height();
+                console.log('load', h1);
+            }); // 이미지 html css 등 모든 컨텐츠 로드되면 실행
+            
+            /*
+            $(window).load(function() {
+                var h1 = $('.img1').height();
+                console.log('load', h1);
+            }); // 이미지 html css 등 모든 컨텐츠 로드되면 실행
+            */
+        
+
+            /*
+            $('p').click(function() {
+                alert('here1');
+            });
+            */
+        });
+        
+        /*
+        document.addEventListener('DOMContentLoaded', function() {
+            const ptag = document.querySelector('p');
+            ptag.addEventListener('click', function() {
+                alert('here2');     
+            });
+        });
+        */
+    </script>
+</head>
+<body>
+    <p>
+		<img src="http://place-hold.it/300X300" class="img1">
+	</p>
+
+</body>
+</html>

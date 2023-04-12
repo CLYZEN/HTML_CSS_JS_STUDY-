@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<div id="wrap">
+		<p><button class="btn_1">버튼1</button></p>
+		<p><button class="btn_2">버튼2</button></p>
+	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            
+            // 라이브 이벤트 등록
+            $(document).on('mouseover focus', '.btn_1.on', function() {
+                alert('here2');
+            });
+
+            /*
+            $('.btn_1.on').on('mouseover focus', function() {
+                alert('here');
+            });
+            */
+
+            $('.btn_1').addClass('on');
+        });
+    </script>
+</body>
+</html>
