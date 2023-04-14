@@ -1,1 +1,13 @@
 @charset "UTF-8";
+
+main {
+  margin-top: 56px;
+}
+
+main .register-title {
+  padding-top: 30px;
+}
+
+.register-form {
+  margin-bottom: 20px;
+}
