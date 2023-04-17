@@ -1,0 +1,117 @@
+body {
+  background-color: rgb(245, 246, 247);
+}
+
+.wrap {
+  margin-top: 50px;
+}
+
+main {
+  margin-top: 50px;
+}
+.row > div:nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 44px;
+  background-image: url(../images/m_naver_logo_20191126.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 240px auto;
+  color: transparent;
+  font-size: 0;
+}
+
+.form-control {
+  border-radius: 0;
+}
+.input-group-text {
+  color: #8e8e8e;
+  border-radius: 0;
+  background-color: white;
+  border-left: 0;
+}
+.input-group {
+  height: 50px;
+  border-right: 0;
+}
+.form-select {
+  height: 50px;
+  border-radius: 0;
+}
+.gender_select {
+  margin: 0 10px;
+  width: 440px;
+}
+.email-span_div {
+  display: flex;
+}
+.auth_button {
+  background-color: rgb(3, 199, 90);
+  height: 50px;
+  border: 1px solid rgb(3, 183, 83);
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.auth-form {
+  margin-top: 10px;
+  display: flex;
+}
+.callnumber_box {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 70%;
+}
+.auth_button_box {
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 5px !important;
+  width: 30%;
+}
+.register_button {
+  background-color: rgb(3, 199, 90);
+  border: 1px solid rgb(3, 183, 83);
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+footer > span {
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+}
+footer > span > a {
+  text-decoration: none;
+  color: black;
+}
+.footer_logo {
+  display: inline;
+  margin: 0 auto;
+  width: 70px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 240px auto;
+  color: transparent;
+  font-size: 0;
+}
+
+.id-pw_form {
+  margin-bottom: 40px;
+}
+.member-info_form {
+  margin-bottom: 40px;
+}

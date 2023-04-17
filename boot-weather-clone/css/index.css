@@ -5,7 +5,9 @@
 main > section {
   margin: 60px 0;
 }
-
+a {
+  text-decoration: none;
+}
 #map {
   height: 500px !important;
 }

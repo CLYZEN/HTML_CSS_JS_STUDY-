@@ -29,7 +29,6 @@
     // $(.city > .icon > img").attr("src", iconURL)
     $("." + city + "> .icon > img").attr("src", iconURL)
   }
-
   // 가져오기 성공
   function getSuccess(position) {
     // position: 사용자 위치정보

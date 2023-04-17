@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/fontawesome.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/brands.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/solid.css" />
+
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <!-- CSS Load -->
+    <link rel="stylesheet" href="./css/register.css">
+
+</head>
+
+<body>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <div class="wrap container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <header>
+                    <div class="header">
+                        <a href="register.html" class="logo">
+                        </a>
+                    </div>
+                </header>
+                <main>
+                    <div class="id-pw_form">
+                        <span style="font-weight: bold;">아이디</span>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2" id="inputID" autofocus>
+                            <span class="input-group-text" id="basic-addon2">@naver.com</span>
+                        </div>
+                        <span style="font-weight: bold;">비밀번호</span>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control" placeholder="" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2" id="inputPassword">
+                            <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-lock"></i></span>
+                        </div>
+                        <span style="font-weight: bold;">비밀번호 재확인</span>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control" placeholder="" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2" id="inputPassword_re">
+                            <span class="input-group-text" id="basic-addon2"><i
+                                    class="fa-solid fa-lock-open"></i></span>
+                        </div>
+                    </div>
+                    <div class="member-info_form">
+                        <span style="font-weight: bold;">이름</span>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2" id="inputName">
+                        </div>
+                        <span style="font-weight: bold;">생년월일</span>
+                        <div class="containor row">
+                            <div class="col-md-4 live_form">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="년(4자)"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2"
+                                        id="inputLive_Y">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select" aria-label="Default select example" id="select_live_M">
+                                    <option selected>월</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="일"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2"
+                                        id="inputLive_D">
+                                </div>
+                            </div>
+                            <span style="font-weight: bold;">성별</span>
+                            <select class="form-select gender_select" aria-label="Default select example"
+                                id="select_gender">
+                                <option selected>성별</option>
+                                <option value="gender_male">남자</option>
+                                <option value="gender_female">여자</option>
+                                <option value="no_gender">선택안함</option>
+                            </select>
+                            <div class="email-span_div">
+                                <span style="font-weight: bold;">본인 확인 이메일</span><span
+                                    style="color: rgb(196, 194, 194); font-size: 12px; line-height: 25px;">(선택)</span>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="선택입력"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2" id="inputEmail">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-auth_form">
+                        <span style="font-weight: bold;">휴대전화</span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>대한민국 +82</option>
+                        </select>
+                        <div class="auth-form">
+                            <div class="callnumber_box">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="전화번호 입력"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2"
+                                        id="inputPhoneNumber">
+                                </div>
+
+                            </div>
+                            <div class="auth_button_box">
+                                <div class="auth_button">
+                                    인증번호 받기
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="인증번호를 입력하세요"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
+                        <div class="register_button">
+                            가입하기
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <span>
+                        <a href="#">이용약관</a> | <a href="#" style="font-weight: bold
+                        ;">개인정보처리방침</a>| <a href="#">책임의 한계와 법적고지</a> | <a href="#">회원정보
+                            고객센터</a> <br>
+                        <a href="#"><img src="./images/small_naver_logo.png" alt="footer_logo" class="footer_logo"></a>
+                        <span>Copyright
+                            NAVER Corp. All Rights Reserved.</span>
+                    </span>
+                </footer>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="./js/register.js"></script>
+</body>
+
+</html>

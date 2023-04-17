@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+main {
+  margin-top: 56px;
+}
+main > section {
+  padding: 40px 0;
+}
+
+main .register-title {
+  padding-top: 30px;
+}
+
+.register-form {
+  margin-bottom: 20px;
+}
+
+.card-body > div {
+  margin: 10px 10px;
+}
+.card-body > div > div {
+  margin: 0 5px;
+  border-bottom: 2px solid rgb(184, 181, 181) !important;
+  border-right: none !important;
+}
+div > p:nth-child(2) {
+  text-align: right;
+}
+.region-title {
+  font-weight: bold !important;
+}
+p {
+  font-weight: bold;
+}
